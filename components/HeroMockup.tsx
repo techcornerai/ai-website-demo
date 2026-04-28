@@ -37,11 +37,17 @@ export default function HeroMockup() {
             <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-cyan-400/15 text-cyan-300 ring-1 ring-cyan-300/30">
               <Zap size={20} aria-hidden="true" />
             </div>
+
             <div>
-              <p className="text-xs uppercase tracking-[0.25em] text-cyan-300">AI Website Control Center</p>
-              <p className="mt-1 font-semibold text-white">Local Service Business</p>
+              <p className="text-xs uppercase tracking-[0.25em] text-cyan-300">
+                AI Website Control Center
+              </p>
+              <p className="mt-1 font-semibold text-white">
+                Local Service Business
+              </p>
             </div>
           </div>
+
           <div className="hidden items-center gap-2 rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300 ring-1 ring-emerald-300/20 sm:flex">
             <span className="h-2 w-2 rounded-full bg-emerald-300 shadow-[0_0_12px_rgba(110,231,183,0.9)]" />
             Live
@@ -49,9 +55,24 @@ export default function HeroMockup() {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-3">
-          <StatCard icon={<MessageCircle size={18} />} label="AI Chats" value="128" detail="+24 this week" />
-          <StatCard icon={<UserRoundCheck size={18} />} label="New Leads" value="34" detail="Ready to call" />
-          <StatCard icon={<CalendarCheck size={18} />} label="Requests" value="19" detail="Appointments" />
+          <StatCard
+            icon={<MessageCircle size={18} />}
+            label="AI Chats"
+            value="128"
+            detail="+24 this week"
+          />
+          <StatCard
+            icon={<UserRoundCheck size={18} />}
+            label="New Leads"
+            value="34"
+            detail="Ready to call"
+          />
+          <StatCard
+            icon={<CalendarCheck size={18} />}
+            label="Requests"
+            value="19"
+            detail="Appointments"
+          />
         </div>
 
         <div className="mt-4 grid gap-4 lg:grid-cols-[1.1fr_0.9fr]">
@@ -61,18 +82,31 @@ export default function HeroMockup() {
                 <div className="rounded-2xl bg-cyan-400/15 p-2 text-cyan-300">
                   <Bot size={20} aria-hidden="true" />
                 </div>
+
                 <div>
                   <p className="text-sm font-bold text-white">AI Assistant</p>
-                  <p className="text-xs text-slate-400">Capturing a customer lead</p>
+                  <p className="text-xs text-slate-400">
+                    Capturing a customer lead
+                  </p>
                 </div>
               </div>
-              <div className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-bold text-cyan-300 ring-1 ring-cyan-300/20">24/7</div>
+
+              <div className="rounded-full bg-cyan-400/10 px-3 py-1 text-xs font-bold text-cyan-300 ring-1 ring-cyan-300/20">
+                24/7
+              </div>
             </div>
 
             <div className="space-y-3">
-              <ChatBubble align="left">Hi, do you have openings this week?</ChatBubble>
-              <ChatBubble align="right">Yes. What service are you interested in?</ChatBubble>
+              <ChatBubble align="left">
+                Hi, do you have openings this week?
+              </ChatBubble>
+
+              <ChatBubble align="right">
+                Yes. What service are you interested in?
+              </ChatBubble>
+
               <ChatBubble align="left">I need a consultation.</ChatBubble>
+
               <div className="rounded-2xl border border-emerald-300/20 bg-emerald-400/10 px-4 py-3">
                 <div className="flex items-center gap-2 text-sm font-bold text-emerald-300">
                   <CheckCircle2 size={17} aria-hidden="true" />
@@ -83,23 +117,38 @@ export default function HeroMockup() {
           </div>
 
           <div className="space-y-4">
-            <motion.div className="rounded-3xl border border-cyan-300/25 bg-cyan-300/10 p-4" initial={{ opacity: 0, x: 22 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.65, delay: 0.45 }}>
+            <motion.div
+              className="rounded-3xl border border-cyan-300/25 bg-cyan-300/10 p-4"
+              initial={{ opacity: 0, x: 22 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.65, delay: 0.45 }}
+            >
               <div className="flex items-start gap-3">
                 <div className="rounded-2xl bg-cyan-400/15 p-2 text-cyan-300">
                   <Bell size={19} aria-hidden="true" />
                 </div>
+
                 <div>
-                  <p className="text-sm font-bold text-white">New lead captured</p>
-                  <p className="mt-1 text-xs leading-5 text-slate-300">Maria Johnson requested a home care consultation.</p>
+                  <p className="text-sm font-bold text-white">
+                    New lead captured
+                  </p>
+                  <p className="mt-1 text-xs leading-5 text-slate-300">
+                    Maria Johnson requested a home care consultation.
+                  </p>
                 </div>
               </div>
             </motion.div>
 
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-4">
               <div className="mb-3 flex items-center gap-2 text-sm font-bold text-white">
-                <CalendarCheck size={18} className="text-cyan-300" aria-hidden="true" />
+                <CalendarCheck
+                  size={18}
+                  className="text-cyan-300"
+                  aria-hidden="true"
+                />
                 Appointment Request
               </div>
+
               <div className="space-y-2 text-sm text-slate-300">
                 <DetailRow label="Service" value="Consultation" />
                 <DetailRow label="Preferred Day" value="Thursday" />
@@ -109,15 +158,25 @@ export default function HeroMockup() {
 
             <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-4">
               <div className="mb-3 flex items-center gap-2 text-sm font-bold text-white">
-                <Clock3 size={18} className="text-cyan-300" aria-hidden="true" />
+                <Clock3
+                  size={18}
+                  className="text-cyan-300"
+                  aria-hidden="true"
+                />
                 Response Time
               </div>
+
               <div className="flex items-end justify-between gap-4">
                 <div>
                   <p className="text-3xl font-black text-white">Instant</p>
-                  <p className="mt-1 text-xs text-slate-400">Even after hours</p>
+                  <p className="mt-1 text-xs text-slate-400">
+                    Even after hours
+                  </p>
                 </div>
-                <div className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300 ring-1 ring-emerald-300/20">Online</div>
+
+                <div className="rounded-full bg-emerald-400/10 px-3 py-1 text-xs font-bold text-emerald-300 ring-1 ring-emerald-300/20">
+                  Online
+                </div>
               </div>
             </div>
           </div>
@@ -126,9 +185,14 @@ export default function HeroMockup() {
         <div className="mt-4 rounded-3xl border border-white/10 bg-white/[0.04] p-4">
           <div className="mb-4 flex items-center justify-between gap-4">
             <div className="flex items-center gap-2 text-sm font-bold text-white">
-              <Activity size={18} className="text-cyan-300" aria-hidden="true" />
+              <Activity
+                size={18}
+                className="text-cyan-300"
+                aria-hidden="true"
+              />
               Lead Activity
             </div>
+
             <div className="flex items-center gap-2 text-xs font-bold text-emerald-300">
               <TrendingUp size={15} aria-hidden="true" />
               +31%
@@ -152,9 +216,21 @@ export default function HeroMockup() {
           </div>
 
           <div className="mt-4 grid gap-3 sm:grid-cols-3">
-            <MiniMetric icon={<MousePointerClick size={16} />} label="Visitors" value="812" />
-            <MiniMetric icon={<MessageCircle size={16} />} label="Chats" value="128" />
-            <MiniMetric icon={<UserRoundCheck size={16} />} label="Leads" value="34" />
+            <MiniMetric
+              icon={<MousePointerClick size={16} />}
+              label="Visitors"
+              value="812"
+            />
+            <MiniMetric
+              icon={<MessageCircle size={16} />}
+              label="Chats"
+              value="128"
+            />
+            <MiniMetric
+              icon={<UserRoundCheck size={16} />}
+              label="Leads"
+              value="34"
+            />
           </div>
         </div>
       </div>
@@ -162,7 +238,17 @@ export default function HeroMockup() {
   );
 }
 
-function StatCard({ icon, label, value, detail }: { icon: React.ReactNode; label: string; value: string; detail: string }) {
+function StatCard({
+  icon,
+  label,
+  value,
+  detail,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+  detail: string;
+}) {
   return (
     <div className="rounded-3xl border border-white/10 bg-white/[0.04] p-4">
       <div className="mb-3 text-cyan-300">{icon}</div>
@@ -173,25 +259,58 @@ function StatCard({ icon, label, value, detail }: { icon: React.ReactNode; label
   );
 }
 
-function ChatBubble({ children, align }: { children: React.ReactNode; align: "left" | "right" }) {
+function ChatBubble({
+  children,
+  align,
+}: {
+  children: React.ReactNode;
+  align: "left" | "right";
+}) {
   const isRight = align === "right";
+
   return (
-    <div className={`max-w-[88%] rounded-2xl px-4 py-3 text-sm leading-6 ${isRight ? "ml-auto rounded-tr-sm bg-cyan-400 font-semibold text-slate-950" : "rounded-tl-sm bg-white/10 text-slate-200"}`}>
+    <div
+      className={`max-w-[88%] rounded-2xl px-4 py-3 text-sm leading-6 ${
+        isRight
+          ? "ml-auto rounded-tr-sm bg-cyan-400 font-semibold text-slate-950"
+          : "rounded-tl-sm bg-white/10 text-slate-200"
+      }`}
+    >
       {children}
     </div>
   );
 }
 
-function DetailRow({ label, value, positive = false }: { label: string; value: string; positive?: boolean }) {
+function DetailRow({
+  label,
+  value,
+  positive = false,
+}: {
+  label: string;
+  value: string;
+  positive?: boolean;
+}) {
   return (
     <p className="flex justify-between gap-4">
       <span>{label}</span>
-      <span className={`font-medium ${positive ? "text-emerald-300" : "text-white"}`}>{value}</span>
+      <span
+        className={`font-medium ${positive ? "text-emerald-300" : "text-white"}`}
+      >
+        {value}
+      </span>
     </p>
   );
 }
 
-function MiniMetric({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) {
+function MiniMetric({
+  icon,
+  label,
+  value,
+}: {
+  icon: React.ReactNode;
+  label: string;
+  value: string;
+}) {
   return (
     <div className="rounded-2xl border border-white/10 bg-slate-950/60 p-3">
       <div className="mb-2 text-cyan-300">{icon}</div>
